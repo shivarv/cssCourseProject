@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en"> <!-- lang = en is neccessary for hyphen-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,12 +9,46 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900">
         <link rel="stylesheet" href="css/icon-font.css">
         <link rel="stylesheet" href="css/style.css">
-
-        
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         <title>Nattours | Exciting tours for adventourous people</title>
     </head>
     <body>
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+            <div class="navigation__background">&nbsp;</div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">
+                            <span>01</span>About Natours
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">
+                            <span>02</span>Your benefits
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">
+                            <span>03</span>Popular tours
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">
+                            <span>04</span>Stories
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">
+                            <span>05</span>Book Now
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
         <header class="header">
             <div class="header__logo-box">
                 <img src="../img/logo-white.png" alt="logo" class="header__logo"></img>
@@ -25,7 +59,7 @@
 
                     <span class="heading-primary--sub">is where life happens</span>
                 </h1>
-                <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
+                <a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a>
             </div>
         </header>
         <main>
@@ -98,7 +132,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section-tours">
+            <section class="section-tours" id="section-tours">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
                         Most Popular Tours
@@ -137,7 +171,7 @@
                                             $297
                                         </p>
                                     </div>
-                                    <a href="" class="btn btn--white">Book now!</a>
+                                    <a href="#popup" class="btn btn--white">Book now!</a>
                                 </div>
                             </div>
                         </div>
@@ -172,7 +206,7 @@
                                             $497
                                         </p>
                                     </div>
-                                    <a href="" class="btn btn--white">Book now!</a>
+                                    <a href="#popup" class="btn btn--white">Book now!</a>
                                 </div>
                             </div>
                         </div>
@@ -207,7 +241,7 @@
                                             $897
                                         </p>
                                     </div>
-                                    <a href="" class="btn btn--white">Book now!</a>
+                                    <a href="#popup" class="btn btn--white">Book now!</a>
                                 </div>
                             </div>
                         </div>
@@ -215,9 +249,177 @@
                 </div>
                 
                 <div class="u-center-text u-margin-top-huge">
-                    <a href="" class="btn btn--green">Discover all tours</a>
+                    <a href="#" class="btn btn--green">Discover all tours</a>
+                </div>
+            </section>
+            <section class="section-stories">
+                <div class="bg-video">
+                    <video class="bg-video__content" autoplay muted loop>
+                        <source src="img/video.mp4" type="video/mp4"></video>
+                        <source src="img/video.webm" type="video/webm"></video>
+                        Your browser is not supported!
+                    </video>
+                </div>
+                <div class="u-center-text u-margin-bottom-big">
+                    <h2 class="heading-secondary">
+                        We make people genuinely happy
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="story">
+                        <figure class="story__shape">
+                            <img  src="img/nat-8.jpg" alt="Person on a tour" class="story__img">
+                            </img>
+                            <figcaption class="story__caption">
+                                Mary Smith
+                            </figcaption>
+                        </figure>
+                        <div class="story__text">
+                            <h3 class="heading-tertiary u-margin-bottom-small">
+                                I had the best week with my family
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque. Eu turpis egestas pretium aenean pharetra magna.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="story">
+                        <figure class="story__shape">
+                            <img  src="img/nat-9.jpg" alt="Person on a tour" class="story__img">
+                            </img>
+                            <figcaption class="story__caption">
+                                Jack Wilson
+                            </figcaption>
+                        </figure>
+                        <div class="story__text">
+                            <h3 class="heading-tertiary u-margin-bottom-small">
+                                WOW! My Life is Completely Different Now
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque. Eu turpis egestas pretium aenean pharetra magna.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="u-center-text u-margin-top-huge">
+                    <a href="" class="btn-text">Read all stories &rarr;</a>
+                </div>
+            </section>
+            <section class="section-book">
+                <div class="row">
+                    <div class="book">
+                        <div class="book__form">
+                            <form action="#" class="form">
+                                <div class="u-center-text u-margin-bottom-medium">
+                                    <h2 class="heading-secondary">
+                                       Start Booking Now
+                                    </h2>
+                                </div>
+                                <div class="form__group">
+                                    <input type="text" class="form__input" placeholder="Full Name" id="name" required>
+                                    <label for="name" class="form__label">Full Name</label>
+                                </div>
+                                <div class="form__group">
+                                    <input type="email" class="form__input" placeholder="Email Address" id="email" required>
+                                    <label for="email" class="form__label">Email Address</label>
+                                </div>
+                                <div class="form__group u-margin-bottom-medium">
+                                    <div class="form__radio-group">
+                                        <input type="radio" class="form__radio-input" id="small" name="size">
+                                        <label for="small" class="form__radio-label">
+                                            <span class="form__radio-button"></span>
+                                            Small tour group
+                                        </label>
+                                    </div>
+                                    <div class="form__radio-group">
+                                        <input type="radio" class="form__radio-input" id="large" name="size">
+                                        <label for="large" class="form__radio-label">
+                                            <span class="form__radio-button"></span>
+                                            Large tour group
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="form__group">
+                                    <button class="btn btn--green">Next Step &rarr;</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
+        
+        <footer class="footer">
+            <div class="footer__logo-box">
+                <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo">
+            </div>
+            <div class="row">
+                <div class="col-1-of-2">
+                    <div class="footer__navigation">
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Company</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Contact us</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Careers</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Privacy policy</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Terms</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-1-of-2">
+                    <p class="footer__copyright">
+                        Built my <a href="#" class="footer__link">
+                            Shiva 
+                        </a> for his online course 
+                        <a href="#" class="footer__link">Advanced CSS and Sass</a>. Copyight &copy; by Shiva. 
+                        You are 100% allowed to use this  webpage for both personal and commmercial use, 
+                        but NOT to claim it as your own design. A credit to the original author , 
+                        Shiva ,is of coursee highly appreciated!
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
+                    <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img">
+                </div>
+                <div class="popup__right">
+                    <a href="#section-tours" class="popup__close">&times</a>
+                    <h2 class="heading-secondary u-margin-bottom-small">
+                        Start Booking now
+                    </h2>
+                    <h3 class="heading-tertiary heading-secondary u-margin-bottom-small">
+                        Important &ndash; Please read these terms before booking
+                    </h3>
+                    <p class="popup__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        In egestas erat imperdiet sed euismod. Dui nunc mattis enim ut tellus. 
+                        Tellus elementum sagittis vitae et leo duis. Enim sed faucibus turpis in eu mi. 
+                        Leo urna molestie at elementum eu facilisis sed. Eget sit amet tellus cras adipiscing. 
+                        Turpis massa tincidunt dui ut ornare lectus sit amet est. Amet aliquam id diam maecenas 
+                        ultricies mi eget. Nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. 
+                        Vitae elementum curabitur vitae nunc sed velit dignissim sodales.
+                    </p>
+                    <a href="#" class="btn btn--green">Book now</a>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
