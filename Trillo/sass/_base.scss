@@ -18,7 +18,15 @@
 
     --line: 1px solid var(--color-grey-light-2);
 
+
 }
+
+ // using scss variable because css variable doesnt work in media query
+$bp-largest: 75em;
+$bp-large: 68.75em; // 1100px.. em so it is base value 1200/16 value , not 10
+$bp-medium: 56.75em; // 900px
+$bp-small: 37.5em; //600px
+$bp-smallest: 31.25em; //500px
 
 * {
     margin: 0;
@@ -44,4 +52,8 @@ html {
     //1 rem font size is set by this
     font-size: 62.5%; // if set as 62.5% , 1 rem is 10px .. .10/16 * 100... default 1rem = 16px
     box-sizing: border-box;
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%;
+    }
 }
