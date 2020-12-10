@@ -1,1 +1,3 @@
 # cssCourseProject
+
+It is a copied project from an udemy course by Advanced CSS and Sass , one of the best course...
