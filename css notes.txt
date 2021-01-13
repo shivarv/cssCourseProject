@@ -1,0 +1,44 @@
+live-server -> to execute server
+npm run compile:sass
+
+autoprefix:
+
+npm install autoprefixer --save-dev
+npm install postcss-cli --save-dev
+
+linea.io
+emmet
+
+unsplash.com
+codepen.io
+icomoon.io
+
+loremipsumgenerator.com
+
+
+easings.net
+
+sizzy.co // to see website for different devices, its helpful for responsive css
+
+https://css-tricks.com/snippets/html/glyphs/ // html entities
+
+shortcut:
+
+ctl+shift+l => multi line selector
+shift+alt+ rightarrow -> to expand selection
+shift+alt+ leftarrow -> to shrink selection
+shift+alt+ downarrow -> to copy line to down
+shift+alt+ uparrow -> to copy line to up
+
+
+caniuse.com -> website to see old browser compatability
+
+
+(ctrl + k, ctrl + f ) -> format html
+
+
+
+
+sample emmet: 
+
+(figure.gallery__item.gallery__item--$>img.gallery__img[src="img/gal-$.jpeg"][alt="Gallery image $"])*14
